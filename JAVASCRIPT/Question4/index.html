@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Exercise Four</title>
+  <link rel="stylesheet" href="C:\Users\Srishti Sharma\Documents\GitHub\assignments\JAVASCRIPT\Question4\style.css">
+</head>
+<body>
+<div class="main">
+  <h1>Copying Objects</h1>
+  <hr/>
+  <h2>Original: <span id="original-object"></span></h2>
+  <h2>Copy: <span id="copied-object"></span></h2>
+</div>
+<script>
+
+var myObject = {
+  "country": "India",
+  "capital": "New Delhi"
+};
+
+console.log("Original object: ")
+console.log(myObject);
+document.getElementById("original-object").innerHTML = myObject.country + ", " + myObject.capital;
+
+var myObjectCopy = {};
+
+for (var key in myObject) {
+  myObjectCopy[key] = myObject[key];
+}
+
+console.log("Copied object: ");
+console.log(myObjectCopy);
+document.getElementById("copied-object").innerHTML = myObjectCopy.country + ", " + myObjectCopy.capital;
+
+</script>
+</body>
+</html>

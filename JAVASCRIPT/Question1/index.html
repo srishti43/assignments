@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Exercise One</title>
+  <link rel="stylesheet" href="C:\Users\Srishti Sharma\Downloads\Java_script_assignment\Java_script_assignment\Question1\style.css">
+</head>
+
+
+<body>
+<div class="main">
+  <h1>Simple Interest</h1>
+  <hr/>
+  <table>
+    <tr>
+      <td>Principal</td>
+      <td id="amount"></td>
+    </tr>
+    <tr>
+      <td>Rate of Interest</td>
+      <td id="rate-of-interest"></td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td id="time"></td>
+    </tr>
+    <tr>
+      <td>Simple Interest</td>
+      <td id="simple-interest"></td>
+    </tr>
+  </table>
+</div>
+<script >
+
+var amount;
+var rateOfInterest;
+var time;
+
+// Amount should be a positive number
+while (isNaN(amount) || amount < 0 || amount == null) {
+    amount = prompt("Principal amount (Rupees)");
+}
+document.getElementById("amount").innerHTML = "Rs " + amount;
+
+// Rate of interest should be a positive number
+while (isNaN(rateOfInterest) || rateOfInterest < 0 || rateOfInterest == null) {
+    rateOfInterest = prompt("Rate of interest (%)");
+}
+
+document.getElementById("rate-of-interest").innerHTML = rateOfInterest + "%";
+
+// Time should be a positive number
+while (isNaN(time) || time < 0 || time == null) {
+    time = prompt("Time (years)");
+}
+
+document.getElementById("time").innerHTML = time + " year(s)";
+
+calcInterest(amount, rateOfInterest, time);
+document.getElementById("simple-interest").innerHTML = "Rs " + calcInterest();
+
+function calcInterest() {
+    var interest = (amount * rateOfInterest * time) / 100;
+    return interest;
+}
+
+
+</script>
+</body>
+</html>
