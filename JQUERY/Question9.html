@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 9</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+ </style>
+</head>
+<body>
+<div class="main">
+ <h1>WELCOME</h1>
+ <select id="dropdown">
+   <option value="Mango" selected>Mango</option>
+   <option value="Banana">Banana</option>
+   <option value="Orange">Orange</option>
+   <option value="Grape">Grape</option>
+ </select>
+ <p>Selected a fruit: <span class="selected-value"></span></p>
+</div>
+<script>
+ $(document).ready(function () {
+   console.log("Hello World");
+   $("#dropdown").on("change", function () {
+     var text = $("#dropdown").val();
+     $(".main .selected-value").text(text);
+   })
+ });
+</script>
+</body>
+</html>

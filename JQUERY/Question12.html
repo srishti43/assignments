@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 12</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+ </style>
+</head>
+<body>
+<div class="main">
+ <h1>WELCOME</h1>
+ <ul>
+   <li id="click"> clik me</li>
+ </ul>
+</div>
+<script>
+ $(document).ready(function () {
+   $(".main").click(function (event) {
+     console.log("Click event is a-bubbling!");
+     console.log(event.target);
+   })
+   $("#click").click(function (event) {
+     console.log(event.target + " clicked on!");
+     event.stopPropagation();
+   });
+ });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 7</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+ </style>
+</head>
+<body>
+<div id="main">
+ <p class="click">Click me </p>
+</div>
+<script>
+ $(document).ready(function () {
+   console.log("Hello World");
+   $(".click").click(function () {
+     var someText = "You clicked me!";
+     $(".click").append(someText);
+   });
+ });
+</script>
+</body>
+</html>

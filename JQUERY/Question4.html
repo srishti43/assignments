@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 4</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: verdana;
+   }
+ </style>
+</head>
+<body>
+<div class="main">
+ <h1>Enter Name</h1>
+ <input type="text">
+ <input type="submit" value="Go">
+</div>
+<script>
+ $(document).ready(function () {
+   console.log("Hello World");
+   $(":submit").attr('disabled', 'disabled');
+ });
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 15</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+ </style>
+</head>
+<body>
+<div>
+ <button>Click</button>
+</div>
+<script>
+ $(document).ready(function () {
+   $("button").click(function(){
+     $.get("https://reqres.in/api/users/6", function(data, status){
+       console.log(data);
+       alert("Status: " + status);
+     });
+   });
+ });
+</script>
+</body>
+</html>
+

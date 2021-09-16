@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 6</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+ </style>
+</head>
+<body>
+<div id="main">
+ <p>Div element 1</p>
+</div>
+<div>Div element 2</div>
+<script>
+ $(document).ready(function () {
+  console.log("Hello World");
+   $("div > p").html("<strong>Changed :)</strong>");
+ });
+</script>
+</body>
+</html>

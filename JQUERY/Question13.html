@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+ <title>  QUESTION 13</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+ </style>
+</head>
+<body style="max-height: 100px">
+<div style="max-height: 70px;" class="main">
+ <h1 style="max-height: 30px;">Welcome</h1>
+ <p style="max-height: 20px;"> paragraph</p>
+ <small style="max-height: 10px;">heavy raining!!</small>
+</div>
+<script>
+ $(document).ready(function () {
+   $("*").each(function () {
+     let elemTarget = $(this).prop("tagName");
+     let elemHeight =  $(this).css("max-height");
+     console.log(elemTarget + " has max-height of " + elemHeight);
+   })
+ });
+</script>
+</body>
+</html>
+

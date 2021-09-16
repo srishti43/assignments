@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+ <title>QUESTION 10</title>
+ <meta charset="utf-8">
+ <script src="jquery-3.6.0.min.js"></script>
+ <style>
+   * {
+     font-family: Verdana;
+   }
+   #dropdown {
+     padding: 0.8em;
+     border: 2px solid rgba(5, 0, 1, 0.008);
+     text-align: center;
+     color: rgba(251, 255, 254, 0.87);
+     background: rgb(187, 182, 25);
+   }
+   #dropdown-content {
+     display: none;
+   }
+   #dropdown-content a {
+     display: block;
+     width: 3em;
+     border: 1px solid rgba(5, 0, 1, 0.008);
+     padding: 0.8em;
+     text-align: center;
+     text-decoration: none;
+     color: rgba(251, 255, 254, 0.87);
+     background: rgb(187, 182, 25);
+   }
+ </style>
+</head>
+<body>
+<div class="main">
+ <h1>WELCOME</h1>
+ <div>
+   <button id="dropdown">FRUITS</button>
+   <div id="dropdown-content">
+     <a href="#">Mango</a>
+     <a href="#">Banana</a>
+     <a href="#">Orange</a>
+     <a href="#">Grapes</a>
+   </div>
+ </div>
+</div>
+<script>
+ $(document).ready(function () {
+   console.log("Hello World");
+   $("#dropdown").hover(function () {
+     console.log("Hovering");
+     $("#dropdown-content").css({"display": "block"});
+   }, function () {
+     $("#dropdown-content").css({"display": "none"});
+   });
+ });
+</script>
+</body>
+</html>
