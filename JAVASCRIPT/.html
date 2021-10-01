@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+  <script>
+     var amount;
+var rateOfInterest;
+var time;
+// Amount should be a positive number
+while (isNaN(amount) || amount < 0 || amount == null) {
+   amount = prompt("Principal amount (Rupees)");
+}
+document.getElementById("amount").innerHTML = "Rs " + amount;
+  </script>
+  <script>
+     // Rate of interest should be a positive number
+while (isNaN(rateOfInterest) || rateOfInterest < 0 || rateOfInterest == null) {
+   rateOfInterest = prompt("Rate of interest (%)");
+}
+document.getElementById("rate-of-interest").innerHTML = rateOfInterest + "%";
+  </script>
+  <script>
+     // Time should be a positive number
+while (isNaN(time) || time < 0 || time == null) {
+   time = prompt("Time (years)");
+}toString
+document.getElementById("time").innerHTML = time + " year(s)";
+  </script>
+  <script>
+     calcInterest(amount, rateOfInterest, time);
+document.getElementById("simple-interest").innerHTML = "Rs " + calcInterest();
+function calcInterest() {
+   var interest = (amount * rateOfInterest * time) / 100;
+   var ret = return interest;
+   prompt(ret);
+}
+
+  </script>
+</body>
+</html>

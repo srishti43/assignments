@@ -1,15 +1,20 @@
 // Q2. Write a program to find the number of occurrences of the duplicate words in a string and print them ?
 package com.company;
-public class Main2 {
+import java.util.Scanner;
+public class Main2
+ {
     public static void main(String[] args) {
-        String string = "Big black bug bit a big black dog on his big black nose";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a String : ");
+        String st = sc.nextLine();
+        System.out.println(st);
         int count;
 
         //Converts the string into lowercase
-        string = string.toLowerCase();
+        st = st.toLowerCase();
 
         //Split the string into words using built-in function  
-        String words[] = string.split(" ");
+        String words[] = st.split(" ");
 
         System.out.println("Duplicate words in a given string : ");
         for(int i = 0; i < words.length; i++) {
@@ -21,6 +26,7 @@ public class Main2 {
                     words[j] = "0";
                 }
             }
+
             //Displays the duplicate word if count is greater than 1
             if(count > 1 && words[i] != "0")
                 System.out.println(words[i]);

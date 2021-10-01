@@ -1,14 +1,22 @@
 //Q1. Write a program to replace a substring inside a string with other string ?
 package com.company;
-
+import java.util.Scanner;
 public class Main {
+public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.print("Enter a String : ");
+     String s1 = sc.nextLine();
+     System.out.print("Enter the String to be replaced : ");
+     String oldString = sc.nextLine();
+     System.out.print("Enter the new String : ");
+     String newString =sc.nextLine();
 
-    public static void main(String[] args) {
-	// write your code here
-        String one = "My name is Srishti";
-        String two = "Srishti Sharma";
-        String modified = one.replace("Srishti", two);
-        System.out.println("Original String is: " + one);
-        System.out.println("modified string is: " + modified);
-    }
+     String replaceString = s1.replace(oldString, newString);
+     System.out.println("New String is :"+replaceString);
+   }
 }
+        
+
+
+    
+   
