@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmailServiceTest" project="sharma" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="EmailServiceTest" time="0.028" uniqueid="[engine:junit-jupiter]/[class:EmailServiceTest]">
+    <testcase name="Should_ReturnTrue_When_String_matches_withThatOfOrder" classname="EmailServiceTest" time="0.022" displayname="Should_ReturnTrue_When_String_matches_withThatOfOrder()" uniqueid="[engine:junit-jupiter]/[class:EmailServiceTest]/[method:Should_ReturnTrue_When_String_matches_withThatOfOrder()]"/>
+    <testcase name="Should_Throw_RuntimeException" classname="EmailServiceTest" time="0.003" displayname="Should_Throw_RuntimeException()" uniqueid="[engine:junit-jupiter]/[class:EmailServiceTest]/[method:Should_Throw_RuntimeException()]"/>
+    <testcase name="Should_ReturnTrue_When_It_Returns_TheInstance" classname="EmailServiceTest" time="0.002" displayname="Should_ReturnTrue_When_It_Returns_TheInstance()" uniqueid="[engine:junit-jupiter]/[class:EmailServiceTest]/[method:Should_ReturnTrue_When_It_Returns_TheInstance()]"/>
+  </testsuite>
+</testrun>
